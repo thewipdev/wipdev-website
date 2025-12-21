@@ -1,7 +1,10 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Instagram, BookOpen, Code2 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="footer">
       <div className="container footer-content">
@@ -10,7 +13,7 @@ const Footer = () => {
         </div>
 
         <div className="copyright">
-          © {new Date().getFullYear()} Muhammed Hasanbaşoğlu. All rights reserved.
+          © {new Date().getFullYear()} Muhammed Hasanbaşoğlu. {t.footer.rights}
         </div>
 
         <div className="footer-social">

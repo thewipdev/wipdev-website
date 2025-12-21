@@ -49,6 +49,12 @@ button {
   padding: 0 2rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .section {
   padding: 5rem 0;
 }
@@ -195,6 +201,16 @@ button {
 
   .mobile-menu-btn {
     display: block;
+  }
+
+  /* Added mobile menu styles */
+  .menu-toggle {
+    background: transparent;
+    color: var(--text-primary);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .mobile-only-menu {
@@ -409,12 +425,31 @@ button {
     gap: 3rem;
   }
 
+  .greeting {
+    font-size: 2.5rem;
+    /* Reduced from 3.5rem */
+  }
+
+  .name {
+    font-size: 2.5rem;
+    /* Reduced from 3.5rem */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allow wrapping */
+  }
+
   .description {
     margin: 0 auto 2.5rem;
+    font-size: 1rem;
   }
 
   .cta-buttons {
     justify-content: center;
+    flex-direction: column;
+    /* Stack buttons */
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 2.5rem;
   }
 
   .hero-socials {
@@ -422,13 +457,10 @@ button {
   }
 
   .profile-frame {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    /* Slightly smaller */
+    height: 280px;
     margin: 0 auto;
-  }
-
-  .name {
-    justify-content: center;
   }
 }
 
@@ -730,6 +762,17 @@ button {
   .contact-content {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  /* Added calendar mobile styles and calendar overrides */
+  .calendar-container {
+    width: 100% !important;
+    height: 600px !important;
+    margin-top: 2rem !important;
+  }
+
+  .calendar-section h2 {
+    font-size: 1.8rem !important;
   }
 }
 

@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Github, Linkedin, Twitter, Instagram, BookOpen, Code2 } from 'lucide-react';
-
-const words = ["Developer", "Entrepreneur", "Organizer"];
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
+  const { t, language } = useLanguage();
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
+
+  // Use words from translation
+  const words = t.hero.roles;
 
   useEffect(() => {
     const handleTyping = () => {
@@ -32,7 +35,7 @@ const Hero = () => {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed]);
+  }, [text, isDeleting, loopNum, typingSpeed, words]);
 
   const [currentImage, setCurrentImage] = useState('/hero-profile.png');
   const [rotation, setRotation] = useState(0);
@@ -68,6 +71,12 @@ const Hero = () => {
     };
   }, []);
 
+  // Helper to determine article (A/An for English, Bir for Turkish)
+  const getArticle = (word) => {
+    if (language === 'tr') return "Bir";
+    return word.match(/^[AEIOU]/) ? "An" : "A";
+  };
+
   return (
     <section id="home" className="hero-section">
       <div className="container hero-content">
@@ -77,21 +86,23 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="hero-text"
         >
-          <h2 className="greeting">Hi! I'm Muhammed,</h2>
-          <h1 className="name">
-            {words[loopNum % words.length].match(/^[AEIOU]/) ? "An" : "A"} <span className="typing-text">{text}</span>
-            <span className="cursor">|</span>
+          <h1>
+            <div className="greeting">{t.hero.greeting}</div>
+            <div className="name">
+              {getArticle(words[loopNum % words.length])} <span className="typing-text">{text}</span>
+              <span className="cursor">|</span>
+            </div>
           </h1>
           <p className="description">
-            Turning complex ideas into scalable products while fostering ecosystems where technology and talent thrive together
+            {t.hero.description}
           </p>
 
           <div className="cta-buttons">
             <a href="#schedule-meeting" className="btn btn-primary">
-              Schedule a Meeting
+              {t.hero.schedule}
             </a>
             <a href="#contact" className="btn btn-outline">
-              GET IN TOUCH
+              {t.hero.contact}
             </a>
           </div>
 
