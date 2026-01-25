@@ -17,22 +17,22 @@ const Footer = () => {
         </div>
 
         <div className="footer-social">
-          <a href="https://github.com/thewipdev" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://github.com/thewipdev" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
             <Github size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/wipdev" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://www.linkedin.com/in/wipdev" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
             <Linkedin size={20} />
           </a>
-          <a href="https://twitter.com/thewipdev" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://twitter.com/thewipdev" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
             <Twitter size={20} />
           </a>
-          <a href="https://www.instagram.com/wipdev" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://www.instagram.com/wipdev" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
             <Instagram size={20} />
           </a>
-          <a href="https://gdg.community.dev/u/mryaea/#/about" target="_blank" rel="noopener noreferrer" className="social-link" title="GDG Community">
+          <a href="https://gdg.community.dev/u/mryaea/#/about" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GDG Community" title="GDG Community">
             <Code2 size={20} />
           </a>
-          <a href="https://medium.com/@muhammedhasanbasoglu" target="_blank" rel="noopener noreferrer" className="social-link" title="Medium">
+          <a href="https://medium.com/@muhammedhasanbasoglu" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Medium" title="Medium">
             <BookOpen size={20} />
           </a>
         </div>

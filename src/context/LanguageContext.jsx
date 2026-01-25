@@ -29,9 +29,9 @@ const translations = {
                 {
                     id: 1,
                     role: 'Founder & Lead Developer',
-                    company: 'İleriOkul',
-                    period: 'September 2025 - Current',
-                    description: 'Leading the end-to-end development of the platform architecture while overseeing strategic marketing and advertising operations. Designed and implemented a proprietary AI-powered analysis system to deliver personalized student insights, bridging the gap between technical execution and business growth.',
+                    company: 'Ludomet',
+                    period: 'April 2025 - Current',
+                    description: 'Pivoting from İleriOkul, I am currently architecting Ludomet, a "Generative Economic Stress-Testing Engine" for game developers. Moving beyond static spreadsheets, I build algorithms that simulate hundreds of gameplay hours in seconds. My goal is to mathematicalize the abstract concept of "Game Balance," helping studios predict churn risks and optimize time-to-fun metrics before launch.',
                 },
                 {
                     id: 2,
@@ -42,10 +42,10 @@ const translations = {
                 },
                 {
                     id: 3,
-                    role: 'Technology & Game Editor',
-                    company: 'Siyah Dergi',
-                    period: 'November 2025 - Current',
-                    description: 'Producing in-depth content on game technologies, hardware trends, and digital culture. Moving beyond fast-consumption media, I focus on objective, data-driven research and technical analysis. My work adheres to strict editorial neutrality, prioritizing deep knowledge and impartial insight over popular trends.',
+                    role: 'Board Member & Treasurer',
+                    company: 'TEVED',
+                    period: 'December 2025 - Current',
+                    description: 'As a Founding Member and current Treasurer of the Technology and Productivity Association (TEVED), I lead organizational strategies to enhance digital literacy. Beyond financial governance, I am co-authoring a "Regional Maturity Report" to analyze the local ecosystem and managing NGO processes for impactful digital transformation projects.',
                 },
             ]
         },
@@ -95,9 +95,9 @@ const translations = {
                 {
                     id: 1,
                     role: 'Kurucu & Baş Geliştirici',
-                    company: 'İleriOkul',
-                    period: 'Eylül 2025 - Günümüz',
-                    description: 'Platform mimarisinin uçtan uca geliştirilmesine liderlik ederken stratejik pazarlama ve reklam operasyonlarını yönetiyorum. Teknik uygulama ile iş büyümesi arasındaki boşluğu doldurarak kişiselleştirilmiş öğrenci içgörüleri sunmak için yapay zeka destekli özel bir analiz sistemi tasarladım ve uyguladım.',
+                    company: 'Ludomet',
+                    period: 'Nisan 2025 - Günümüz',
+                    description: 'İleriOkul girişimini pivot ederek, oyun ekonomilerini statik Excel tablolarından kurtaran Ludomet\'i geliştiriyorum. Bir "Üretken Ekonomi Stres Testi Motoru" olarak, yüzlerce saatlik oynanışı saniyeler içinde simüle eden algoritmalar tasarlıyorum. Vizyonum; "Oyun Dengesi" kavramını formülize ederek geliştiricilere matematiksel öngörüler ve risk analizleri sunmak.',
                 },
                 {
                     id: 2,
@@ -108,10 +108,10 @@ const translations = {
                 },
                 {
                     id: 3,
-                    role: 'Teknoloji & Oyun Editörü',
-                    company: 'Siyah Dergi',
-                    period: 'Kasım 2025 - Günümüz',
-                    description: 'Oyun teknolojileri, donanım trendleri ve dijital kültür üzerine derinlemesine içerikler üretiyorum. Hızlı tüketim medyasının ötesine geçerek objektif, veri odaklı araştırma ve teknik analize odaklanıyorum. Çalışmalarım, popüler trendler yerine derin bilgi ve tarafsız içgörüyü önceliklendiren katı editoryal tarafsızlığa bağlıdır.',
+                    role: 'Yönetim Kurulu Üyesi & Sayman',
+                    company: 'TEVED',
+                    period: 'Aralık 2025 - Günümüz',
+                    description: 'Hem Kurucu Üye hem de Yönetim Kurulu Üyesi (Sayman) olduğum Teknoloji ve Verimlilik Derneği (TEVED) çatısı altında, dijital okuryazarlığı artırma stratejilerine liderlik ediyorum. Finansal yönetimin ötesinde, yerel ekosistemi analiz eden "Bölgesel Olgunluk Raporu"na katkı sağlıyor ve dijital dönüşüm projeleri için STK süreçlerini yönetiyorum.',
                 },
             ]
         },

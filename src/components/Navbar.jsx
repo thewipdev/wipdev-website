@@ -82,7 +82,7 @@ const Navbar = () => {
             >
               {language === 'en' ? 'EN' : 'TR'}
             </button>
-            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="menu-toggle">
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="menu-toggle" aria-label={isMobileMenuOpen ? "Menüyü kapat" : "Menüyü aç"}>
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>

@@ -17,7 +17,7 @@ const About = () => {
             whileHover={{ scale: 1.02 }}
             className="about-image"
           >
-            <img src="/about-me.jpg" alt="About Me" />
+            <img src="/about-me.jpg" alt="Muhammed Hasanbaşoğlu Hakkında" width="500" height="600" />
           </motion.div>
 
           <motion.div
