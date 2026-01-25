@@ -129,6 +129,7 @@ const Contact = () => {
               style={{ border: 0, width: '100%', height: '100%' }}
               frameBorder="0"
               title="Muhammed Hasanbaşoğlu ile Toplantı Planla"
+              loading="lazy"
             ></iframe>
           </div>
         </div>
