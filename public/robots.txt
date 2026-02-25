@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://wipdev.com.tr/sitemap.xml
